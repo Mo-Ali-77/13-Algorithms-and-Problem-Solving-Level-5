@@ -35,46 +35,6 @@ The repository is organized into **8 core projects**, ranging from low-level dat
 ### ⏳Progress
 ---
 
-## 📂 Directory Structure
-
-13-Algorithms-Problem-Solving-Level-5/
-│
-├── .gitignore                
-├── README.md                 
-│
-├── 01-Double-Linked-List/
-│   ├── clsDblLinkedList.h    
-│   └── main.cpp              
-│
-├── 02-Queue-LinkedList/
-│   ├── clsMyQueue.h          
-│   └── main.cpp
-│
-├── 03-Stack-LinkedList/
-│   ├── clsMyStack.h          
-│   └── main.cpp
-│
-├── 04-Dynamic-Array/
-│   ├── clsDynamicArray.h     
-│   └── main.cpp
-│
-├── 05-Queue-Array/
-│   ├── clsMyQueueArr.h       
-│   └── main.cpp
-│
-├── 06-Stack-Array/
-│   ├── clsMyStackArr.h       
-│   └── main.cpp
-│
-├── 07-Undo-Redo-Project/
-│   ├── clsUndoRedoManager.h  
-│   └── main.cpp              
-│
-└── 08-Queue-Line-System/
-    ├── clsQueueLine.h        
-    └── main.cpp              
----
-
 ## 🛠️ Technologies & Concepts
 * **Language:** C++
 * **Concepts:** * Object-Oriented Programming (OOP)
@@ -83,8 +43,8 @@ The repository is organized into **8 core projects**, ranging from low-level dat
     * Time & Space Complexity ($O(n)$, $O(1)$)
 ---
 
-# Developed by: Mohammed Ali Al-amoudi
-# Supervised by: Dr.Mohammed Abu-Hadhoud
+### Developed by: Mohammed Ali Al-amoudi
+### Supervised by: Dr.Mohammed Abu-Hadhoud
 ---
 
 ## 🙏 Acknowledgment
@@ -133,53 +93,15 @@ which was the primary source of learning how to build this system step by step.
 ### ⏳في طور التطوير
 ---
 
-## 📂 الهيكل التنظيمي للمستودع
 
-13-Algorithms-Problem-Solving-Level-5/
-│
-├── .gitignore                
-├── README.md                 
-│
-├── 01-Double-Linked-List/
-│   ├── clsDblLinkedList.h    
-│   └── main.cpp              
-│
-├── 02-Queue-LinkedList/
-│   ├── clsMyQueue.h          
-│   └── main.cpp
-│
-├── 03-Stack-LinkedList/
-│   ├── clsMyStack.h          
-│   └── main.cpp
-│
-├── 04-Dynamic-Array/
-│   ├── clsDynamicArray.h     
-│   └── main.cpp
-│
-├── 05-Queue-Array/
-│   ├── clsMyQueueArr.h       
-│   └── main.cpp
-│
-├── 06-Stack-Array/
-│   ├── clsMyStackArr.h       
-│   └── main.cpp
-│
-├── 07-Undo-Redo-Project/
-│   ├── clsUndoRedoManager.h  
-│   └── main.cpp              
-│
-└── 08-Queue-Line-System/
-    ├── clsQueueLine.h        
-    └── main.cpp
----
 
 ## 🛠️ التقنيات المستخدمة
 * **اللغة:** C++ (أو اللغة التي تستخدمها)
 * **المفاهيم:** OOP (Object Oriented Programming), Memory Management, Templates.
 ---
 
-# Developed by: Mohammed Ali Al-amoudi
-# Supervised by: Dr.Mohammed Abu-Hadhoud
+### Developed by: Mohammed Ali Al-amoudi
+### Supervised by: Dr.Mohammed Abu-Hadhoud
 ---
 
 ## 🙏 الشكر والتقدير
