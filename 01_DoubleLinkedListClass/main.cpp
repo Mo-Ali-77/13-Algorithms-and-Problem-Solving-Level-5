@@ -9,6 +9,13 @@ int main()
 {
 	clsDbLinkedList<int> MyDbLinkedList;
 
+	if (MyDbLinkedList.IsEmpty())
+		cout << "\n\nYes List is Empty.\n";
+	else
+		cout << "\n\nNo List is NOT Empty.\n";
+
+	cout << "\nSize of Linked List = " << MyDbLinkedList.Size() << "\n";
+
 	MyDbLinkedList.InsertAtBeginnig(5);
 	MyDbLinkedList.InsertAtBeginnig(4);
 	MyDbLinkedList.InsertAtBeginnig(3);
@@ -16,7 +23,7 @@ int main()
 	MyDbLinkedList.InsertAtBeginnig(1);
 
 
-	cout << "Print DbLinkedList Content:\n";
+	cout << "\nPrint DbLinkedList Content:\n";
 	MyDbLinkedList.PrintList();
 
 	clsDbLinkedList<int>::Node* N1 = MyDbLinkedList.Find(2);
@@ -46,9 +53,13 @@ int main()
 	MyDbLinkedList.DeleteLastNode();
 	cout << "\nAfter Delete Last Node:\n";
 	MyDbLinkedList.PrintList();
-
-	cout << "Size of Linked List = " << MyDbLinkedList.Size();
 	
+	if (MyDbLinkedList.IsEmpty())
+		cout << "\nYes List is Empty.\n";
+	else
+		cout << "\nNo List is NOT Empty.\n";
+
+	cout << "\nSize of Linked List = " << MyDbLinkedList.Size();
 
 	system("pause>0");
 	return 0;
