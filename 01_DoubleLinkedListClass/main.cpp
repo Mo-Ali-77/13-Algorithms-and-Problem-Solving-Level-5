@@ -59,6 +59,11 @@ int main()
 	else
 		cout << "\nNo List is NOT Empty.\n";
 
+	cout << "\nSize of Linked List = " << MyDbLinkedList.Size() << "\n";
+
+	cout << "\nClear Linked List:\n";
+	MyDbLinkedList.Clear();
+
 	cout << "\nSize of Linked List = " << MyDbLinkedList.Size();
 
 	system("pause>0");
