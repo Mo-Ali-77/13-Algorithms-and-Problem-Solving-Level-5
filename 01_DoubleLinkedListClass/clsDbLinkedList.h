@@ -5,6 +5,10 @@ using namespace std;
 template <class T> 
 class clsDbLinkedList
 {
+
+protected:
+	int _Size = 0;
+
 public:
 
 	class Node
@@ -30,6 +34,7 @@ public:
 		}
 	
 		head = New_Node;
+		++_Size;
 	}
 
 	Node* Find(T Value)
@@ -59,6 +64,7 @@ public:
 		}
 		
 		Current->next = New_Node;
+		++_Size;
 	}
 
 	void InsertAtEnd(T Value)
@@ -85,6 +91,8 @@ public:
 			Current->next = New_Node;
 			New_Node->prev = Current;
 		}
+
+		++_Size;
 	}
 
 	void DeleteNode(Node*& NodeToDelete)
@@ -107,6 +115,7 @@ public:
 		}
 		
 		delete NodeToDelete;
+		--_Size;
 	}
 
 	void DeleteFirstNode()
@@ -119,7 +128,7 @@ public:
 			head->prev = NULL;
 		
 		delete Temp;
-		
+		--_Size;
 	}
 
 	void DeleteLastNode()
@@ -136,7 +145,7 @@ public:
 
 		Node* Current = head;
 
-		// My Solution:
+		
 		while (Current->next != NULL)
 		{
 			Current = Current->next;
@@ -147,19 +156,7 @@ public:
 		Current->prev->next = NULL;
 
 		delete Temp;
-
-		 //Dr.Abu-Hadhoud Solution:
-		
-		//while (Current->next->next != NULL)
-		//{
-		//	Current = Current->next;
-		//}
-
-		//Node* Temp = Current->next;
-
-		//Current->next = NULL;
-
-		//delete Temp;
+		--_Size;
 	}
 
 	void PrintList()
@@ -173,5 +170,11 @@ public:
 
 		cout << "\n";
 	}
+
+	int Size()
+	{
+		return _Size;
+	}
+
 };
 

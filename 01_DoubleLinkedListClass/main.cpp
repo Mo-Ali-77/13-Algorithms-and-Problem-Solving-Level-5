@@ -47,6 +47,9 @@ int main()
 	cout << "\nAfter Delete Last Node:\n";
 	MyDbLinkedList.PrintList();
 
+	cout << "Size of Linked List = " << MyDbLinkedList.Size();
+	
+
 	system("pause>0");
 	return 0;
 }
