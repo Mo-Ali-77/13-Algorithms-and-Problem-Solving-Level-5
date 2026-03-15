@@ -8,7 +8,7 @@ class clsDbLinkedList
 
 protected:
 	int _Size = 0;
-
+	
 public:
 
 	class Node
@@ -19,7 +19,7 @@ public:
 		Node* prev;
 	};
 
-	Node*head = NULL;
+	Node* head = NULL;
 
 	void InsertAtBeginnig(T Value)
 	{
@@ -187,6 +187,23 @@ public:
 		{
 			DeleteFirstNode();
 		}
+	}
+
+	void Reverse()
+	{
+		Node* Current = head;
+		Node* temp = nullptr;
+
+		while (Current != nullptr)
+		{
+			temp = Current->prev;
+			Current->prev = Current->next;
+			Current->next = temp;
+			Current = Current->prev;
+		}
+
+		if (temp != nullptr)
+			head = temp->prev;
 	}
 
 };

@@ -61,6 +61,10 @@ int main()
 
 	cout << "\nSize of Linked List = " << MyDbLinkedList.Size() << "\n";
 
+	cout << "\nLinked list after reverse:\n";
+	MyDbLinkedList.Reverse();
+	MyDbLinkedList.PrintList();
+
 	cout << "\nClear Linked List:\n";
 	MyDbLinkedList.Clear();
 
