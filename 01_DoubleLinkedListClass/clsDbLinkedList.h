@@ -206,5 +206,40 @@ public:
 			head = temp->prev;
 	}
 
+	Node* GetNode(int Index)
+	{
+		// My Solution: [Mo Ali]
+		if ((Index >= this->_Size) || (Index < 0) || (this->_Size == 0))
+			return NULL;
+
+		Node* Current = head;
+
+		for (int i = 0; i < Index; ++i)
+		{
+			Current = Current->next;
+		}
+
+		return Current;
+
+
+		// Dr.Abu-Hadhoud Solution:
+		/*int Counter = 0;
+
+		if (Index > _Size - 1 || Index < 0)
+			return NULL;
+
+		Node* Current = head;
+		while (Current != NULL && (Current->next != NULL)) {
+
+			if (Counter == Index)
+				break;
+
+			Current = Current->next;
+			Counter++;
+
+		}
+
+		return Current;*/
+	}
 };
 

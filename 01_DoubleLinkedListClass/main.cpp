@@ -70,6 +70,21 @@ int main()
 
 	cout << "\nSize of Linked List = " << MyDbLinkedList.Size();
 
+
+	MyDbLinkedList.InsertAtBeginnig(5);
+	MyDbLinkedList.InsertAtBeginnig(4);
+	MyDbLinkedList.InsertAtBeginnig(3);
+	MyDbLinkedList.InsertAtBeginnig(2);
+	MyDbLinkedList.InsertAtBeginnig(1);
+
+	cout << "\n\nLinked list content:\n";
+	MyDbLinkedList.PrintList();
+
+	clsDbLinkedList<int>::Node* N = MyDbLinkedList.GetNode(4);
+
+	cout << "\nNode Value at index 4 is: " << N->value;
+
+
 	system("pause>0");
 	return 0;
 }
