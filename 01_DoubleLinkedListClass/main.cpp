@@ -82,7 +82,9 @@ int main()
 
 	clsDbLinkedList<int>::Node* N = MyDbLinkedList.GetNode(4);
 
-	cout << "\nNode Value at index 4 is: " << N->value;
+	cout << "\nNode Value at index 4 is: " << N->value << endl;
+
+	cout << "\nItem (2) Value is: " << MyDbLinkedList.GetItem(2) << endl;
 
 
 	system("pause>0");

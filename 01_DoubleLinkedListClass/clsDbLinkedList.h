@@ -208,7 +208,6 @@ public:
 
 	Node* GetNode(int Index)
 	{
-		// My Solution: [Mo Ali]
 		if ((Index >= this->_Size) || (Index < 0) || (this->_Size == 0))
 			return NULL;
 
@@ -220,26 +219,13 @@ public:
 		}
 
 		return Current;
+	}
 
+	T GetItem(int Index)
+	{
+		Node* temp = this->GetNode(Index);
 
-		// Dr.Abu-Hadhoud Solution:
-		/*int Counter = 0;
-
-		if (Index > _Size - 1 || Index < 0)
-			return NULL;
-
-		Node* Current = head;
-		while (Current != NULL && (Current->next != NULL)) {
-
-			if (Counter == Index)
-				break;
-
-			Current = Current->next;
-			Counter++;
-
-		}
-
-		return Current;*/
+		return (temp != NULL) ? temp->value : NULL;
 	}
 };
 
