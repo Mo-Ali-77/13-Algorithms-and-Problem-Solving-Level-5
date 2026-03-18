@@ -240,5 +240,18 @@ public:
 		else
 			return false;
 	}
+
+	bool InsertAfter(int Indext, T Value)
+	{
+		Node* FindNodeByIndex = this->GetNode(Indext);
+
+		if (FindNodeByIndex != NULL)
+		{
+			this->InsertAfter(FindNodeByIndex, Value);
+			return true;
+		}
+		else
+			return false;
+	}
 };
 

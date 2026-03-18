@@ -90,6 +90,13 @@ int main()
 	MyDbLinkedList.UpdateItem(2, 500);
 	MyDbLinkedList.PrintList();
 
+	cout << "\n\nInsert After Index 1:";
+	cout << "\nSize Befoere Inserted: " << MyDbLinkedList.Size() << endl;
+	MyDbLinkedList.InsertAfter(4, 900);
+	cout << "\nLinked List:\n";
+	MyDbLinkedList.PrintList();
+	cout << "\nSize After Inserted: " << MyDbLinkedList.Size() << endl;
+
 	system("pause>0");
 	return 0;
 }
