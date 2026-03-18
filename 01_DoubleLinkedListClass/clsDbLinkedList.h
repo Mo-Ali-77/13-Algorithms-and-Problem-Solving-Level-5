@@ -227,5 +227,18 @@ public:
 
 		return (temp != NULL) ? temp->value : NULL;
 	}
+
+	bool UpdateItem(int Index, T NewValue)
+	{
+		Node* NodeItem = this->GetNode(Index);
+		
+		if (NodeItem != NULL)
+		{
+			NodeItem->value = NewValue;
+			return true;
+		}
+		else
+			return false;
+	}
 };
 

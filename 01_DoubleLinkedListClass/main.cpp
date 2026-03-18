@@ -86,6 +86,9 @@ int main()
 
 	cout << "\nItem (2) Value is: " << MyDbLinkedList.GetItem(2) << endl;
 
+	cout << "\nAfter Updating Item(2):\n";
+	MyDbLinkedList.UpdateItem(2, 500);
+	MyDbLinkedList.PrintList();
 
 	system("pause>0");
 	return 0;
