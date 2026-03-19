@@ -38,8 +38,12 @@ int main()
     MyQueue.UpdateItem(2, 500);
     MyQueue.print();
 
-    cout << "\n\nInsert After Index 2:\n";
+    cout << "\n\nInsert 700 After Index 2:\n";
     MyQueue.InsertAfter(2, 700);
+    MyQueue.print();
+
+    cout << "\n\nInsert 900 At Front:\n";
+    MyQueue.InsertAtFront(900);
     MyQueue.print();
 
 	system("pause>0");
