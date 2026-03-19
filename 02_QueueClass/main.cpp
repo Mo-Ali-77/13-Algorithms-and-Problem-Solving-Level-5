@@ -34,6 +34,10 @@ int main()
     MyQueue.Reverse();
     MyQueue.print();
 
+    cout << "\n\nUpdate Item 2:\n";
+    MyQueue.UpdateItem(2, 500);
+    MyQueue.print();
+
 	system("pause>0");
 	return 0;
 }
