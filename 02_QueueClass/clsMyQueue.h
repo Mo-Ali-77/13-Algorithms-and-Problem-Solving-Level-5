@@ -81,5 +81,10 @@ public:
 		_LastItem = Value;
 	}
 
+	void Clear()
+	{
+		_MyList.Clear();
+	}
+
 };
 

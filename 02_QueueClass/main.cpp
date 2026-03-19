@@ -50,6 +50,10 @@ int main()
     MyQueue.InsertAtBack(600);
     MyQueue.print();
 
+    cout << "\n\nClear Queue:\n";
+    MyQueue.Clear();
+    MyQueue.print();
+
 	system("pause>0");
 	return 0;
 }
