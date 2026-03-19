@@ -26,6 +26,14 @@ int main()
     cout << "\n\nQueue after pop() : \n";
     MyQueue.print();
 
+    cout << "\n\nItem in Index 2: " << MyQueue.GetItem(2);
+
+    cout << "\n\nBefore Reverse Queue:\n";
+    MyQueue.print();
+    cout << "\n\nAfter Reverse Queue:\n";
+    MyQueue.Reverse();
+    MyQueue.print();
+
 	system("pause>0");
 	return 0;
 }
