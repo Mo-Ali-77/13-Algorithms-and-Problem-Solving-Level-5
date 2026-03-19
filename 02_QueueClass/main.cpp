@@ -46,6 +46,10 @@ int main()
     MyQueue.InsertAtFront(900);
     MyQueue.print();
 
+    cout << "\n\nInsert 600 at Back:\n";
+    MyQueue.InsertAtBack(600);
+    MyQueue.print();
+
 	system("pause>0");
 	return 0;
 }

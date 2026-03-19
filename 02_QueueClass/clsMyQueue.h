@@ -75,5 +75,11 @@ public:
 		_MyList.InsertAtBeginnig(Value);
 	}
 
+	void InsertAtBack(T Value)
+	{
+		_MyList.InsertAtEnd(Value);
+		_LastItem = Value;
+	}
+
 };
 
