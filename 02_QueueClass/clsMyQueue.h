@@ -49,5 +49,10 @@ public:
 	{
 		return _LastItem;
 	}
+
+	T GetItem(int Index)
+	{
+		return _MyList.GetItem(Index);
+	}
 };
 
