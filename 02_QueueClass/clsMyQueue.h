@@ -65,5 +65,10 @@ public:
 		_MyList.UpdateItem(Index, NewValue);
 	}
 
+	void InsertAfter(int Index, T Value)
+	{
+		_MyList.InsertAfter(Index, Value);
+	}
+
 };
 
