@@ -1,0 +1,90 @@
+#pragma once
+#include "clsDbLinkedList.h"
+
+template <class T>
+class clsMyQueue
+{
+
+protected:
+	clsDbLinkedList <T> _MyList;
+	T _LastItem = NULL;
+
+public:
+	
+	void push(T Value)
+	{
+		_MyList.InsertAtEnd(Value);
+		_LastItem = Value;
+	}
+
+	void pop()
+	{
+		_MyList.DeleteFirstNode();
+
+		if (_MyList.IsEmpty())
+			_LastItem = NULL;
+	}
+
+	void print()
+	{
+		_MyList.PrintList();
+	}
+
+	int Size()
+	{
+		return _MyList.Size();
+	}
+
+	bool IsEmpty()
+	{
+		return _MyList.IsEmpty();
+	}
+
+	T front()
+	{
+		return _MyList.head->value;
+	}
+
+	T back()
+	{
+		return _LastItem;
+	}
+
+	T GetItem(int Index)
+	{
+		return _MyList.GetItem(Index);
+	}
+
+	void Reverse()
+	{
+		_MyList.Reverse();
+	}
+
+	void UpdateItem(int Index, T NewValue)
+	{
+		_MyList.UpdateItem(Index, NewValue);
+	}
+
+	void InsertAfter(int Index, T Value)
+	{
+		_MyList.InsertAfter(Index, Value);
+	}
+
+	void InsertAtFront(T Value)
+	{
+		_MyList.InsertAtBeginnig(Value);
+	}
+
+	void InsertAtBack(T Value)
+	{
+		_MyList.InsertAtEnd(Value);
+		_LastItem = Value;
+	}
+
+	void Clear()
+	{
+		_MyList.Clear();
+	}
+
+};
+

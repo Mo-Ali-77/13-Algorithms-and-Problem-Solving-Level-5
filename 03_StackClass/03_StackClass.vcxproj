@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="clsDbLinkedList.h" />
+    <ClInclude Include="clsMyQueue.h" />
     <ClInclude Include="clsMySatck.h" />
   </ItemGroup>
   <ItemGroup>

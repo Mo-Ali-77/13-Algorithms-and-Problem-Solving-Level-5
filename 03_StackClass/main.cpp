@@ -3,8 +3,6 @@
 
 using namespace std;
 
-
-
 int main()
 {
 	clsMySatck<int> Mystack;
@@ -15,15 +13,15 @@ int main()
 	Mystack.Push(40);
 
 	cout << "\nPrint Stack:\n";
-	Mystack.Print();
+	Mystack.print();
 
 	cout << "\nTop: " << Mystack.Top();
 	cout << "\nBottom: " << Mystack.Bottom();
 	cout << "\nSize: " << Mystack.Size();
 
-	Mystack.Pop();
+	Mystack.pop();
 	cout << "\n\nPrint Stack include one time pop():\n";
-	Mystack.Print();
+	Mystack.print();
 
 	cout << "\nTop: " << Mystack.Top();
 	cout << "\nBottom: " << Mystack.Bottom();
@@ -33,27 +31,27 @@ int main()
 
 	cout << "\nReverse Stack:\n";
 	Mystack.Reverse();
-	Mystack.Print();
+	Mystack.print();
 
 	cout << "\nUpdate Item By Index 2:\n";
 	Mystack.UpdateItem(2, 500);
-	Mystack.Print();
+	Mystack.print();
 
 	cout << "\nInsert After Index 2:\n";
 	Mystack.InsertAfter(2, 900);
-	Mystack.Print();
+	Mystack.print();
 
 	cout << "\nInsert At Front:\n";
 	Mystack.InsertAtFront(700);
-	Mystack.Print();
+	Mystack.print();
 
 	cout << "\nInsert At Back:\n";
 	Mystack.InsertAtBack(600);
-	Mystack.Print();
+	Mystack.print();
 
 	cout << "\nClear Stack:\n";
 	Mystack.Clear();
-	Mystack.Print();
+	Mystack.print();
 
 	system("pause>0");
 	return 0;
