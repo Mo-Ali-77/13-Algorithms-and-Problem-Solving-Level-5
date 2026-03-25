@@ -24,7 +24,7 @@ The repository is organized into **8 core projects**, ranging from low-level dat
 
 1. [✅] Double Linked List Class
 2. [✅] Queue Class
-3. [⏳] Stack Class 
+3. [✅] Stack Class 
 4. [⏳] Dynamic Array Class
 5. [⏳] Queue Array Class
 6. [⏳] Stack Array Class 
@@ -82,7 +82,7 @@ which was the primary source of learning how to build this system step by step.
 
 1. [✅] Double Linked List Class
 2. [✅] Queue Class
-3. [⏳] Stack Class 
+3. [✅] Stack Class 
 4. [⏳] Dynamic Array Class
 5. [⏳] Queue Array Class
 6. [⏳] Stack Array Class 
