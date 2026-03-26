@@ -105,10 +105,10 @@ public:
 		_OrignalArray = _TempArray;
 	}
 
-	void DeleteItemAt(int Index)
+	bool DeleteItemAt(int Index)
 	{
 		if ((Index >= _Size) || (Index < 0) || (_Size == 0))
-			return;
+			return false;
 
 		--_Size;
 		_TempArray = new T[_Size];
@@ -126,6 +126,12 @@ public:
 
 		delete[] _OrignalArray;
 		_OrignalArray = _TempArray;
+		return true;
+	}
+
+	bool DeleteFirstItem()
+	{
+		return DeleteItemAt(0);
 	}
 };
 
