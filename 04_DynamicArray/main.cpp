@@ -18,7 +18,11 @@ int main()
 
 	cout << "\nItem(2): " << MyDynamicArray.GetItem(2) << endl;
 
-	cout << "\nFind 30 in Array:";
+	cout << "\nInsert Item 500 in Index 2:\n";
+	MyDynamicArray.InsertAt(2, 500);
+	MyDynamicArray.PrintList();
+
+	cout << "\n\nFind 30 in Array:";
 	int Index = MyDynamicArray.Find(30);
 
 	if (Index != -1)

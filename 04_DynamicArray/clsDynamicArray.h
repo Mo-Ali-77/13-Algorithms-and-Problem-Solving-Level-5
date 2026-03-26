@@ -53,22 +53,22 @@ public:
 		}
 	}
 
-	void ReSize(int Size)
+	void ReSize(int NewSize)
 	{
-		if (Size < 0)
-			Size = 0;
+		if (NewSize < 0)
+			NewSize = 0;
 
-		_TempArray = new T[Size];
+		_TempArray = new T[NewSize];
 
-		if (_Size > Size)
-			_Size = Size;
+		if (_Size > NewSize)
+			_Size = NewSize;
 		
 		for (int i = 0; i < _Size; ++i)
 		{
 			_TempArray[i] = _OrignalArray[i];
 		}
 
-		_Size = Size;
+		_Size = NewSize;
 		delete[] _OrignalArray;
 		_OrignalArray = _TempArray;
 	}
@@ -157,6 +157,31 @@ public:
 			return false;
 
 		return DeleteItemAt(Index);
+	}
+
+	bool InsertAt(int Index, T Value)
+	{
+		if ((Index >= _Size) || (Index < 0) || (_Size == 0))
+			return false;
+
+		++_Size;
+		_TempArray = new T[_Size];
+
+		for (int i = 0; i < Index; ++i)
+		{
+			_TempArray[i] = _OrignalArray[i];
+		}
+
+		_TempArray[Index] = Value;
+
+		for (int i = Index; i < _Size; ++i)
+		{
+			_TempArray[i + 1] = _OrignalArray[i];
+		}
+
+		delete[] _OrignalArray;
+		_OrignalArray = _TempArray;
+		return true;
 	}
 };
 
