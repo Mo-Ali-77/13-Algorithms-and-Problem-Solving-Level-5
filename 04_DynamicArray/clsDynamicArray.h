@@ -188,5 +188,10 @@ public:
 	{
 		return InsertAt(0, Value);
 	}
+
+	bool InsertBefore(int Index, T value)
+	{
+		return InsertAt(Index - 1, value);
+	}
 };
 
