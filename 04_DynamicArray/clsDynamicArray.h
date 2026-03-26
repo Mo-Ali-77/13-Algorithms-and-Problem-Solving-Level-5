@@ -80,5 +80,21 @@ public:
 
 		return _OrignalArray[Index];
 	}
+
+	void Reverse()
+	{
+		_TempArray = new T[_Size];
+
+		int counter = 0;
+		for (int i = _Size-1; i >= 0; --i)
+		{
+			_TempArray[counter] = _OrignalArray[i];
+			++counter;
+		}
+
+		delete[] _OrignalArray;
+
+		_OrignalArray = _TempArray;
+	}
 };
 
