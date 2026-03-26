@@ -191,12 +191,18 @@ public:
 
 	bool InsertBefore(int Index, T value)
 	{
-		return InsertAt(Index - 1, value);
+		if (Index < 1)
+			return InsertAt(0, value);
+		else
+			return InsertAt(Index - 1, value);
 	}
 
 	bool InsertAfter(int Index, T Value)
 	{
-		return InsertAt(Index + 1, Value);
+		if (Index >= _Size)
+			return InsertAt(_Size - 1, Value);
+		else
+			return InsertAt(Index + 1, Value);
 	}
 
 	bool InsertAtEnd(T Value)
