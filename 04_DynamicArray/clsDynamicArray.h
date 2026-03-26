@@ -115,7 +115,7 @@ public:
 
 		int counter = 0;
 
-		for (int i = 0; i < _Size; ++i)
+		for (int i = 0; i <= _Size; ++i)
 		{
 			if (i != Index)
 			{
@@ -137,6 +137,17 @@ public:
 	bool DeleteLastItem()
 	{
 		return DeleteItemAt(_Size - 1);
+	}
+
+	int Find(T Value)
+	{
+		for (int i = 0; i < _Size; ++i)
+		{
+			if (_OrignalArray[i] == Value)
+				return i;
+		}
+
+		return -1;
 	}
 };
 

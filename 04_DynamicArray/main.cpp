@@ -10,12 +10,23 @@ int main()
 	MyDynamicArray.SetItem(1, 20);
 	MyDynamicArray.SetItem(2, 30);
 	MyDynamicArray.SetItem(3, 40);
+	MyDynamicArray.SetItem(4, 50);
 
 	cout << "\nPrint Dynamic Array:\n";
 	MyDynamicArray.PrintList();
 	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
 	cout << "\nItem(2): " << MyDynamicArray.GetItem(2) << endl;
+
+	cout << "\nFind 30 in Array:";
+	int Index = MyDynamicArray.Find(30);
+
+	if (Index != -1)
+		cout << "\n30 Found at index: " << Index << endl;
+	else
+		cout << "\nVakue NOT Found.\n";
+
+
 
 	cout << "\nDeleteItem(2):\n";
 	MyDynamicArray.DeleteItemAt(2);
