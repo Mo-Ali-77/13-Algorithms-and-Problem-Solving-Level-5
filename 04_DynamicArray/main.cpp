@@ -13,6 +13,21 @@ int main()
 
 	cout << "\nPrint Dynamic Array:\n";
 	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
+
+	
+	
+	cout << "\nArray Items after resize from 5 to 10 :\n";
+	MyDynamicArray.ReSize(10);
+	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
+
+	
+	
+	cout << "\nArray Items after resize from 10 to 5 :\n";
+	MyDynamicArray.ReSize(5);
+	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
 	system("pause>0");
 	return 0;
