@@ -149,5 +149,14 @@ public:
 
 		return -1;
 	}
+
+	bool DeleteItem(T Value)
+	{
+		int Index = Find(Value);
+		if (Index == -1)
+			return false;
+
+		return DeleteItemAt(Index);
+	}
 };
 
