@@ -33,6 +33,12 @@ int main()
 	MyDynamicArray.PrintList();
 	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
+	cout << "\nClear Array:\n";
+	MyDynamicArray.Clear();
+	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
+
+
 	system("pause>0");
 	return 0;
 }

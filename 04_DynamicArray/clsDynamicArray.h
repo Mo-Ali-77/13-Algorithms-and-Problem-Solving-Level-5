@@ -96,5 +96,13 @@ public:
 
 		_OrignalArray = _TempArray;
 	}
+
+	void Clear()
+	{
+		_Size = 0;
+		_TempArray = new T[_Size];
+		delete[] _OrignalArray;
+		_OrignalArray = _TempArray;
+	}
 };
 
