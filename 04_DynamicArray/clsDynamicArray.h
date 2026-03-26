@@ -183,5 +183,10 @@ public:
 		_OrignalArray = _TempArray;
 		return true;
 	}
+
+	bool InsertAtBegining(T Value)
+	{
+		return InsertAt(0, Value);
+	}
 };
 
