@@ -23,20 +23,24 @@ int main()
 	MyDynamicArray.PrintList();
 	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
-	cout << "\n\nInsert Item At Begining:\n";
+	cout << "\n\nInsert Item 900 At Begining:\n";
 	MyDynamicArray.InsertAtBegining(900);
 	MyDynamicArray.PrintList();
 	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
-	cout << "\n\nInsert Item Before index 2:\n";
+	cout << "\n\nInsert Item 700 Before index 2:\n";
 	MyDynamicArray.InsertBefore(2, 700);
 	MyDynamicArray.PrintList();
 	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
-	cout << "\n\nInsert Item After index 2:\n";
+	cout << "\n\nInsert Item 600 After index 2:\n";
 	MyDynamicArray.InsertAfter(2, 600);
 	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
+	cout << "\n\nInsert Item 300 At End:\n";
+	MyDynamicArray.InsertAtEnd(300);
+	MyDynamicArray.PrintList();
 	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
 	cout << "\n\nFind 30 in Array:";
