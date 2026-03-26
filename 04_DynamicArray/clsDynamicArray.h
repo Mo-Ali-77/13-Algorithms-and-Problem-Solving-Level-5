@@ -72,5 +72,13 @@ public:
 		delete[] _OrignalArray;
 		_OrignalArray = _TempArray;
 	}
+
+	T GetItem(int Index)
+	{
+		if ((Index >= _Size) || (Index < 0) || (_Size == 0))
+			return NULL;
+
+		return _OrignalArray[Index];
+	}
 };
 
