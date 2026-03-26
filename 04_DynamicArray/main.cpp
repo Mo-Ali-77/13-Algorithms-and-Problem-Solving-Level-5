@@ -21,13 +21,20 @@ int main()
 	cout << "\nInsert Item 500 in Index 2:\n";
 	MyDynamicArray.InsertAt(2, 500);
 	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
 	cout << "\n\nInsert Item At Begining:\n";
 	MyDynamicArray.InsertAtBegining(900);
 	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
 
 	cout << "\n\nInsert Item Before index 2:\n";
 	MyDynamicArray.InsertBefore(2, 700);
+	MyDynamicArray.PrintList();
+	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;
+
+	cout << "\n\nInsert Item After index 2:\n";
+	MyDynamicArray.InsertAfter(2, 600);
 	MyDynamicArray.PrintList();
 
 	cout << "\nArray Size: " << MyDynamicArray.Size() << endl;

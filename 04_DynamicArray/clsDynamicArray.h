@@ -193,5 +193,10 @@ public:
 	{
 		return InsertAt(Index - 1, value);
 	}
+
+	bool InsertAfter(int Index, T Value)
+	{
+		return InsertAt(Index + 1, Value);
+	}
 };
 
