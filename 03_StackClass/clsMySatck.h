@@ -8,6 +8,9 @@ public:
 
 	void Push(T Value)
 	{
+		if (clsMyQueue<T>::_LastItem == NULL)
+			clsMyQueue<T>::_LastItem = Value;
+
 		clsMyQueue<T>::_MyArray.InsertAtBeginnig(Value);
 	}
 
