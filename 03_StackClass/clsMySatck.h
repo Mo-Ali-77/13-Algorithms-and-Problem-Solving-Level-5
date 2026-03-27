@@ -8,7 +8,7 @@ public:
 
 	void Push(T Value)
 	{
-		clsMyQueue<T>::_MyList.InsertAtBeginnig(Value);
+		clsMyQueue<T>::_MyArray.InsertAtBeginnig(Value);
 	}
 
 	T Top()

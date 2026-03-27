@@ -1,16 +1,16 @@
 #pragma once
-#include "clsDbLinkedList.h"
+#include "clsDynamicArray.h"
 
 template <class T>
-class clsMyQueue
+class clsMyQueueArr
 {
 
 protected:
-	clsDbLinkedList <T> _MyArray;
+	clsDynamicArray <T> _MyArray;
 	T _LastItem = NULL;
 
 public:
-	
+
 	void push(T Value)
 	{
 		_MyArray.InsertAtEnd(Value);
@@ -19,7 +19,7 @@ public:
 
 	void pop()
 	{
-		_MyArray.DeleteFirstNode();
+		_MyArray.DeleteFirstItem();
 
 		if (_MyArray.IsEmpty())
 			_LastItem = NULL;
@@ -42,7 +42,7 @@ public:
 
 	T front()
 	{
-		return _MyArray.head->value;
+		return _MyArray.GetItem(0);
 	}
 
 	T back()
@@ -62,7 +62,7 @@ public:
 
 	void UpdateItem(int Index, T NewValue)
 	{
-		_MyArray.UpdateItem(Index, NewValue);
+		_MyArray.SetItem(Index, NewValue);
 	}
 
 	void InsertAfter(int Index, T Value)
@@ -72,7 +72,7 @@ public:
 
 	void InsertAtFront(T Value)
 	{
-		_MyArray.InsertAtBeginnig(Value);
+		_MyArray.InsertAtBegining(Value);
 	}
 
 	void InsertAtBack(T Value)

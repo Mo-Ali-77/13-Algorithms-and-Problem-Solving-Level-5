@@ -7,15 +7,18 @@ class clsDynamicArray
 {
 protected:
 	int _Size = 0;
-	T* _OrignalArray;
+	
 	T* _TempArray;
 
 public:
+
+	T* _OrignalArray;
 
 	clsDynamicArray(int Size = 0)
 	{
 		if (Size < 0)
 			_Size = 0;
+
 		_Size = Size;
 
 		_OrignalArray = new T[_Size];
@@ -107,7 +110,7 @@ public:
 
 	bool DeleteItemAt(int Index)
 	{
-		if ((Index >= _Size) || (Index < 0))
+		if ((Index >= _Size) || (Index < 0) || (_Size == 0))
 			return false;
 
 		--_Size;
@@ -115,14 +118,16 @@ public:
 
 		int counter = 0;
 
-		for (int i = 0; i <= _Size; ++i)
+		for (int i = 0; i < Index; i++)
 		{
-			if (i != Index)
-			{
-				_TempArray[counter] = _OrignalArray[i];
-				++counter;
-			}
+			_TempArray[i] = _OrignalArray[i];
 		}
+
+		for (int i = Index + 1; i < _Size + 1; i++)
+		{
+			_TempArray[i - 1] = _OrignalArray[i];
+		}
+
 
 		delete[] _OrignalArray;
 		_OrignalArray = _TempArray;
@@ -161,7 +166,7 @@ public:
 
 	bool InsertAt(int Index, T Value)
 	{
-		if ((Index > _Size) || (Index < 0) || (_Size == 0))
+		if ((Index > _Size) || (Index < 0))
 			return false;
 
 		++_Size;
