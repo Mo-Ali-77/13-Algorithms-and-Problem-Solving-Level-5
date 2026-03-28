@@ -192,7 +192,6 @@ public:
         cout << "\n";
     }
 
-
     void PrintAllTickets()
     {
         cout << "\n\n\t\t\t       ---Tickets---";
