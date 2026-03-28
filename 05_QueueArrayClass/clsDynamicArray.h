@@ -7,12 +7,10 @@ class clsDynamicArray
 {
 protected:
 	int _Size = 0;
-	
+	T* _OrignalArray;
 	T* _TempArray;
 
 public:
-
-	T* _OrignalArray;
 
 	clsDynamicArray(int Size = 0)
 	{

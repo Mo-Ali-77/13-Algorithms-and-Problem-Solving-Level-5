@@ -7,22 +7,17 @@ class clsMyQueueArr
 
 protected:
 	clsDynamicArray <T> _MyArray;
-	T _LastItem = NULL;
 
 public:
 
 	void push(T Value)
 	{
 		_MyArray.InsertAtEnd(Value);
-		_LastItem = Value;
 	}
 
 	void pop()
 	{
 		_MyArray.DeleteFirstItem();
-
-		if (_MyArray.IsEmpty())
-			_LastItem = NULL;
 	}
 
 	void print()
@@ -47,7 +42,7 @@ public:
 
 	T back()
 	{
-		return _LastItem;
+		return GetItem(_MyArray.Size() - 1);
 	}
 
 	T GetItem(int Index)
@@ -78,7 +73,6 @@ public:
 	void InsertAtBack(T Value)
 	{
 		_MyArray.InsertAtEnd(Value);
-		_LastItem = Value;
 	}
 
 	void Clear()
