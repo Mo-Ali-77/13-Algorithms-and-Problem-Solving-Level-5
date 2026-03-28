@@ -7,10 +7,10 @@ int main()
 {
 	clsMyStackArr<int> Mystack;
 
-	Mystack.Push(10);
-	Mystack.Push(20);
-	Mystack.Push(30);
-	Mystack.Push(40);
+	Mystack.push(10);
+	Mystack.push(20);
+	Mystack.push(30);
+	Mystack.push(40);
 
 	cout << "\nPrint Stack:\n";
 	Mystack.print();

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ede70ee8-1e4e-4219-b5c8-619cd5e2f35a}</ProjectGuid>
-    <RootNamespace>My03StackClass</RootNamespace>
+    <ProjectGuid>{4e05fdcd-afd2-4b27-b48e-6c700d466bbf}</ProjectGuid>
+    <RootNamespace>My07UndoAndRedoSimpleProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,9 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="clsDbLinkedList.h" />
-    <ClInclude Include="clsMyQueue.h" />
-    <ClInclude Include="clsMyStack.h" />
+    <ClInclude Include="clsDynamicArray.h" />
+    <ClInclude Include="clsMyQueueArr.h" />
+    <ClInclude Include="clsMyStackArr.h" />
+    <ClInclude Include="clsMyString.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

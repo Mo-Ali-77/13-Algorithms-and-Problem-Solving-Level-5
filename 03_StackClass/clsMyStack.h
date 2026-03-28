@@ -2,7 +2,7 @@
 #include "clsMyQueue.h"
 
 template <class T>
-class clsMySatck : public clsMyQueue <T>
+class clsMyStack : public clsMyQueue <T>
 {
 public:
 

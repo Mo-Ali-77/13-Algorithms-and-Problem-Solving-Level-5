@@ -27,7 +27,7 @@ The repository is organized into **8 core projects**, ranging from low-level dat
 3. [✅] Stack Class 
 4. [✅] Dynamic Array Class
 5. [✅] Queue Array Class
-6. [⏳] Stack Array Class 
+6. [✅] Stack Array Class 
 7. [⏳] Undo and Redo Project
 8. [⏳] Queue Line System
 
@@ -85,7 +85,7 @@ which was the primary source of learning how to build this system step by step.
 3. [✅] Stack Class 
 4. [✅] Dynamic Array Class
 5. [✅] Queue Array Class
-6. [⏳] Stack Array Class 
+6. [✅] Stack Array Class 
 7. [⏳] Undo and Redo Project
 8. [⏳] Queue Line System
 
